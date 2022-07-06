@@ -1,0 +1,23 @@
+Package: ZWYX
+Title: Identifies Sex-Linked Regions of Genome Assemblies
+Version: 0.0.0.9000
+Authors@R: 
+    person("James", "Walters", , "jrwalters@ku.edu", role = c("aut", "cre"))
+Description: ZWYX uses genomic sequencing coverage to identify regions of genome
+   assemblies corresponding to sex chromosomes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+   changepoint,
+   GenomicRanges,
+   SummarizedExperiment
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Suggests: 
+    rmarkdown,
+    knitr,
+    ggplot2
+VignetteBuilder: knitr
