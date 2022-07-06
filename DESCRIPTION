@@ -21,5 +21,6 @@ LazyData: true
 Suggests: 
     rmarkdown,
     knitr,
-    ggplot2
+    ggplot2,
+    BiocStyle
 VignetteBuilder: knitr
