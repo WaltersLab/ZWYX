@@ -65,28 +65,6 @@ cp.out[["2L.2_5878429_9317088_chimeraAX"]]
 outsegs.df <- mergeSegments(changeList = cp.out[1:3], asDF = TRUE)
 head(outsegs.df)
 
-## ---- eval = F-----------------------------------------------------------------------------------
-#  
-#  tmp1 <- cp.out[["2L.2_5878429_9317088_chimeraAX"]][[2]]
-#  tmp2 <- GenomicRanges::split(tmp1, ~Linkage)
-#  tmp3 <- reduce(tmp2)
-#  tmp4 <- unlist(tmp3)
-#  
-#  
-#  reduceSegments(cp.out[["2L.2_5878429_9317088_chimeraAX"]][[2]])
-#  redseg(cp.out[["2L.2_5878429_9317088_chimeraAX"]][[2]])
-#  
-#  
-#  redseg <- function( SegmentGR ) {
-#     splitGR <- GenomicRanges::split(SegmentGR, ~Linkage)
-#     reducedGR <- GenomicRanges::reduce(splitGR)
-#     outGR <- unlist(reduceGR)
-#     outGR$Linkage <- names(outGR)
-#     names(outGR) <- NULL
-#     return(sort(outGR))
-#  }
-#  
-
 ## ---- fig.width=7--------------------------------------------------------------------------------
 # Extract a known chimeric scaffold for demonstration
 cp <- cp.out[[2]]
