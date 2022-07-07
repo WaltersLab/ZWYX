@@ -21,12 +21,10 @@ ZWYX also incorporates "changepoint" algorithms for detecting shifts in sex-spec
 You can install the development version of ZWYX as follows:
 
 ``` r
-remotes::install_github("WaltersLab/ZWYX", build_vignettes = TRUE)
+remotes::install_github("WaltersLab/ZWYX")
 ```
 
-Using `build_vignettes = TRUE` is important so that the vignette is rendered.
-
-Then you can access the vignette via:
+For an example of how the package is used, you can access the vignette via:
 
 ``` r
 browseVignettes("ZWYX")
