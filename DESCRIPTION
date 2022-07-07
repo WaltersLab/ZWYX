@@ -8,13 +8,13 @@ Description: ZWYX uses genomic sequencing coverage to identify regions of genome
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Imports:
    changepoint,
    GenomicRanges,
    SummarizedExperiment
 Depends: 
-    R (>= 3.5)
+    R (>= 4.0)
 biocViews:
     Software
 LazyData: true
